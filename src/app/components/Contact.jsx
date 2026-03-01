@@ -49,8 +49,9 @@ const Contact = () => {
              text-white/70 hover:text-white
              transition"
 >
-   <LeetCodeIcon className="w-5 h-5" />
-   <Image  src='/leetcode.svg' alt="" width={50} height={50} ></Image>
+   <Image  src='/leetcode.svg' alt="" width={25} height={25} ></Image>
+   <LeetCodeIcon className="w-1 h-1" />
+  
 
  
 </a>
