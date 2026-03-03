@@ -83,12 +83,18 @@ export default function Home() {
       <div 
       >
   
-         <img
+         {/* <img
           src="/images/stack.png"
           alt="Project Preview"
           className="rounded-2xl"
         /> 
-        {/* <GlassStack /> */}
+        <GlassStack /> */}
+{/* 
+      <img
+          src="/images/stack3.png"
+          alt="Project Preview"
+          className="rounded-2xl"
+        />  */}
 
       </div>
 
