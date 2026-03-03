@@ -1,4 +1,6 @@
 import Contact from "./components/Contact";
+import GlassStack from "./components/GlassStack";
+import Terminal from "./components/icons/Terminal";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
@@ -50,9 +52,9 @@ export default function Home() {
 
           <div>
         <h4 className="text-2xl text-white/80">
-        Hi, I'm Adarsh.
+        Hi, Im Adarsh.
       </h4>
-      <image src="/images/profile-pic.png" alt="Profile Picture" className="w-24 h-24 rounded-full mt-4" />
+      <img src="/images/me5.jpg" alt="Profile Picture" className="w-20 h-20 rounded-full mt-4" />
       </div>
       <p className="text-white/70 text-lg max-w-xl">
         I build scalable web applications with modern frontend and backend 
@@ -70,24 +72,23 @@ export default function Home() {
         </button>
       </div>
 
+    
+
     </div>
 
     {/* RIGHT SIDE */}
     <div className="relative">
 
-      <div className="
-        rounded-3xl
-        border border-white/10
-        bg-black/40
-        backdrop-blur-xl
-        p-6
-      ">
-
-        {/* <img
-          src="/images/project-preview.png"
+<Terminal />
+      <div 
+      >
+  
+         <img
+          src="/images/stack.png"
           alt="Project Preview"
           className="rounded-2xl"
-        /> */}
+        /> 
+        {/* <GlassStack /> */}
 
       </div>
 
