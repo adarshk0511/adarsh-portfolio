@@ -8,7 +8,7 @@ const lines = [
   { text: "> docker build ...", type: "command" },
   { text: "✓ Image built successfully", type: "success" },
   { text: "> Deploying to production...", type: "command" },
-  { text: "✓ Live at harsh.dev", type: "success" },
+  { text: "✓ Live at adarsh.dev", type: "success" },
 ];
 
 export default function Terminal() {
@@ -61,7 +61,7 @@ export default function Terminal() {
   </div>
 
   {/* Center Progress Bar */}
-  <div className="absolute left-1/2 -translate-x-1/2 w-35 h-[3px] 
+  <div className="absolute left-1/2 -translate-x-1/2 w-30 h-[3px] 
                   bg-white/10 rounded-full overflow-hidden">
     <div className="h-full w-1/3 bg-gradient-to-r 
                     from-cyan-400 via-emerald-400 to-purple-400

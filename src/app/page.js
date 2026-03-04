@@ -1,110 +1,57 @@
 import Contact from "./components/Contact";
 import GlassStack from "./components/GlassStack";
-import Terminal from "./components/icons/Terminal";
+import Terminal from "./components/Terminal";
+import LeftSide from "./components/LeftSide";
 import Navbar from "./components/Navbar";
-
+import RightSide from "./components/RightSide";
 export default function Home() {
   return (
-    <div className="relative max-h-screen overflow-hidden bg-black">
-
-      {/* Background Video */}
-      <video
-        src="/videos/rgb-bg.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-screen object-cover"
-      />
-
-      {/* Glass Border Overlay */}
-      <div className=" w-full
-            
-            h-full pointer-events-none absolute inset-0 flex items-center justify-center p-8  
-            backdrop-blur-xl"    style={{
-            WebkitMask:
-              "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
-            WebkitMaskComposite: "xor",
-            maskComposite: "exclude",
-            padding: "50px",
-            borderRadius: "20px",
-          }}>
-        
-   
-
-      </div>
-
-      {/* Content Layer */}
-      <div className="relative z-10">
-        <Navbar />
-        <Contact />
-       
-          <section className="relative z-10 min-h-screen flex items-center px-8 lg:px-20">
-  
-  <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
-
-    {/* LEFT SIDE */}
-    <div className="space-y-8 text-white">
-      
-      <h1 className="text-5xl lg:text-6xl font-semibold leading-tight">
-        Full Stack <span className="text-white/60">Developer</span>
-      </h1>
-
-          <div>
-        <h4 className="text-2xl text-white/80">
-        Hi, Im Adarsh.
-      </h4>
-      <img src="/images/me5.jpg" alt="Profile Picture" className="w-20 h-20 rounded-full mt-4" />
-      </div>
-      <p className="text-white/70 text-lg max-w-xl">
-        I build scalable web applications with modern frontend and backend 
-        technologies. Passionate about performance, clean architecture, and 
-        creating meaningful digital experiences.
-      </p>
-
-      <div className="flex gap-6">
-        <button className="px-6 py-3 rounded-full bg-white text-black font-medium hover:scale-105 transition">
-          Explore Work
-        </button>
-
-        <button className="px-6 py-3 rounded-full border border-white/30 hover:bg-white/10 transition">
-          About Me
-        </button>
-      </div>
-
-    
-
-    </div>
-
-    {/* RIGHT SIDE */}
-    <div className="relative">
-
-<Terminal />
-      <div 
+    <div className="min-h-screen bg-black flex items-center justify-center p-6">
+      {/* Glass Frame */}
+      <div
+        className="
+        relative
+        w-full
+        max-w-[1400px]
+        h-[90vh]
+        rounded-3xl
+        overflow-hidden
+        border border-white/10
+        backdrop-blur-2xl
+        bg-white/5
+        shadow-[0_20px_60px_rgba(0,0,0,0.6)]
+      "
       >
-  
-         {/* <img
-          src="/images/stack.png"
-          alt="Project Preview"
-          className="rounded-2xl"
-        /> 
-        <GlassStack /> */}
-{/* 
-      <img
-          src="/images/stack3.png"
-          alt="Project Preview"
-          className="rounded-2xl"
-        />  */}
+        {/* Video */}
+        <video
+          src="/videos/rgb-bg.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
 
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Content */}
+        {/* Content Layer */}
+        <div className="relative -top-10 z-10">
+          <Navbar />
+          <Contact />
+
+          <section className="relative -top-20 z-10 min-h-screen flex items-center px-8 lg:px-20">
+            <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
+              {/* LEFT SIDE */}
+              <LeftSide />
+
+              {/* RIGHT SIDE */}
+              <RightSide />
+            </div>
+          </section>
+        </div>
       </div>
-
-    </div>
-
-  </div>
-
-</section>
-      </div>
-
     </div>
   );
 }
