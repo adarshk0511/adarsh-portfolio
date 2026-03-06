@@ -7,12 +7,26 @@ import { Tech } from "./Tech";
 const StackSection = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-    //   viewport={{ once: true }}
-      id="stack"
-      className="py-32 px-6 relative"
+    id="stack"
+      className="py-40 px-6 relative"
+      initial={{
+        opacity: 0,
+        y: 120,
+        scale: 0.95,
+        filter: "blur(10px)"
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        filter: "blur(0px)"
+      }}
+      transition={{
+        duration: 1,
+        ease: [0.22, 1, 0.36, 1]
+      }}
+      viewport={{ once: true, margin: "-100px" }}
+    
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[250px_1fr] gap-16">
         {/* LEFT LABEL */}
