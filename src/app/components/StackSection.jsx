@@ -12,36 +12,34 @@ const StackSection = () => {
       initial={{
         opacity: 0,
         y: 120,
-        scale: 0.95,
+        scale: 0.85,
         filter: "blur(10px)"
       }}
       whileInView={{
         opacity: 1,
         y: 0,
-        scale: 1,
+        scale: 1.1,
         filter: "blur(0px)"
       }}
       transition={{
-        duration: 1,
-        ease: [0.22, 1, 0.36, 1]
+        duration: 0.8,
+        ease: [0.42, 1, 0.36, 1]
       }}
-      viewport={{ once: true, margin: "-100px" }}
+      viewport={{ margin: "-100px" }}
     
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[250px_1fr] gap-16">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[250px_1fr] gap-24">
         {/* LEFT LABEL */}
         <div className="text-gray-400 text-5xl font-bold tracking-wide">
           FRONTEND
         </div>
 
         {/* RIGHT GRID */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-          <Tech icon="/icons/js.svg" name="JavaScript" />
-          <Tech icon="/icons/ts.svg" name="TypeScript" />
-          <Tech icon="/icons/react.svg" name="React" />
-          <Tech icon="/icons/next.svg" name="Next.js" />
-          <Tech icon="/icons/redux.svg" name="Redux" />
-          <Tech icon="/icons/tailwind.svg" name="Tailwind" />
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <Tech icon="/icons/js.png" name="JavaScript" />
+          <Tech icon="/icons/react.png" name="React" />
+          <Tech icon="/icons/sass.webp" name="Sass.js" />
+          <Tech icon="/icons/tailwind.png" name="Tailwind" />
         </div>
       </div>
     </motion.div>
