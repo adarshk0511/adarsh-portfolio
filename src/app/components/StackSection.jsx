@@ -36,10 +36,12 @@ const StackSection = () => {
 
         {/* RIGHT GRID */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          <Tech icon="/icons/js.png" name="JavaScript" />
+          <Tech icon="/icons/js.png" name="JavaScript" /> 
           <Tech icon="/icons/react.png" name="React" />
           <Tech icon="/icons/sass.webp" name="Sass.js" />
           <Tech icon="/icons/tailwind.png" name="Tailwind" />
+          <Tech icon="/icons/html.png" name="HTML" />
+          <Tech icon="/icons/css.png" name="CSS" />
         </div>
       </div>
     </motion.div>
