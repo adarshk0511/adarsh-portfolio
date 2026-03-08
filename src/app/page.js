@@ -6,7 +6,12 @@ import Navbar from "./components/Navbar";
 import RightSide from "./components/RightSide";
 import { Tech } from "./components/Tech";
 import {motion} from "framer-motion";
-import StackSection from "./components/StackSection";
+import StackSection from "./components/FrontendStackSection";
+import FrontendStackSection from "./components/FrontendStackSection";
+import BackendStackSection from "./components/BackendStackSection";
+import DatabaseStackSection from "./components/DatabaseStackSection";
+import ToolsStackSection from "./components/ToolsStackSection";
+import IdeStackSection from "./components/IdeStackSection";
 export default function Home() {
   return (
     <>
@@ -60,8 +65,14 @@ export default function Home() {
 
 
       {/* ========= STACK SECTION ======================*/}
-      <StackSection />
-      
+      <div>
+          <FrontendStackSection />
+      <BackendStackSection />
+      <DatabaseStackSection />
+      <ToolsStackSection />
+      <IdeStackSection />
+      </div>
+    
     </>
   );
 }

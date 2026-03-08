@@ -4,11 +4,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Tech } from "./Tech";
 
-const StackSection = () => {
+const IdeStackSection = () => {
   return (
     <motion.div
     id="stack"
-      className="py-40 px-6 relative"
+      className="pt-30  relative"
       initial={{
         opacity: 0,
         y: 120,
@@ -28,24 +28,21 @@ const StackSection = () => {
       viewport={{ margin: "-100px" }}
     
     >
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[250px_1fr] gap-24">
+      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-[380px_1fr] gap-10">
         {/* LEFT LABEL */}
         <div className="text-gray-400 text-5xl font-bold tracking-wide">
-          FRONTEND
+          IDEs
         </div>
 
         {/* RIGHT GRID */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          <Tech icon="/icons/js.png" name="JavaScript" /> 
-          <Tech icon="/icons/react.png" name="React" />
-          <Tech icon="/icons/sass.webp" name="Sass.js" />
-          <Tech icon="/icons/tailwind.png" name="Tailwind" />
-          <Tech icon="/icons/html.png" name="HTML" />
-          <Tech icon="/icons/css.png" name="CSS" />
+        <div className="flex flex-wrap gap-x-7 gap-y-8 pl-19">
+          <Tech icon="/icons/vscode.png" name="VsCode" /> 
+          <Tech icon="/icons/xcode.png" name="Xcode" />
+          <Tech icon="/icons/androidstudio.png" name="Android Studio" />
         </div>
       </div>
     </motion.div>
   );
 };
 
-export default StackSection;
+export default IdeStackSection;
