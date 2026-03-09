@@ -11,6 +11,7 @@ const Navbar = () => {
        bg-black/10
         backdrop-blur-xl
         shadow-[0_10px_40px_rgba(0,0,0,0.5)]
+        
 ">
   <div className="flex items-center justify-between px-6 py-3 pt-5">
 

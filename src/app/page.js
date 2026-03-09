@@ -12,6 +12,9 @@ import BackendStackSection from "./components/BackendStackSection";
 import DatabaseStackSection from "./components/DatabaseStackSection";
 import ToolsStackSection from "./components/ToolsStackSection";
 import IdeStackSection from "./components/IdeStackSection";
+import Marquee from "./components/Marquee";
+import Marquee1 from "./components/Marquee1";
+import SectionLabel from "./components/SectionLabel";
 export default function Home() {
   return (
     <>
@@ -65,7 +68,11 @@ export default function Home() {
 
 
       {/* ========= STACK SECTION ======================*/}
-      <div>
+      <div className="max-w-screen overflow-hidden">
+       
+        {/* <Marquee /> */}
+         <Marquee1 />
+         
           <FrontendStackSection />
       <BackendStackSection />
       <DatabaseStackSection />

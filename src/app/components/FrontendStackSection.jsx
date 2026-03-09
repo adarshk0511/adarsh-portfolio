@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Tech } from "./Tech";
+import SectionLabel from "./SectionLabel";
 
 const FrontendStackSection = () => {
 
@@ -30,8 +31,10 @@ const FrontendStackSection = () => {
       }}
       viewport={{ margin: "-100px" }}
     >
+       <SectionLabel text="MY STACK" className="ml-[20%]"/>
       <motion.div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-[380px_1fr] gap-10">
         {/* LEFT LABEL */}
+        
         <div className="text-gray-400 text-5xl font-bold tracking-wide">
           FRONTEND
         </div>
