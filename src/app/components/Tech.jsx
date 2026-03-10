@@ -22,7 +22,7 @@ const item = {
   return (
     <motion.div variants={item} whileHover={{ scale: 1.05 }} className="flex items-center gap-3 text-lg text-gray-100 opacity-80 hover:opacity-100 transition font-extralight italic will-change-transform">
       <img src={icon} className="w-10 h-10" />
-      <span className="text-2xl">{name}</span>
+      <span className="font-(--font-inter) text-2xl">{name}</span>
     </motion.div>
   );
 }

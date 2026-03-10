@@ -18,7 +18,7 @@ export default function SectionLabel({ text }) {
         ✻
       </motion.span>
 
-      <span className="font-medium">{text}</span>
+      <span className="font-medium font-(--font-grotesk)">{text}</span>
 
     </div>
   );

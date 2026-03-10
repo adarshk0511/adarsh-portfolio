@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Inter  } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Space_Grotesk, JetBrains_Mono  } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "./components/SmoothScroll";
 
@@ -17,6 +17,19 @@ const inter = Inter({
   weight: ["400"],       // ExtraLight
   style: ["italic"],     // Italic
   display: "swap",
+  variable: "--font-inter",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["300","400","500","600"],
+  variable: "--font-jetbrains",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300","400","500","600","700"],
+  variable: "--font-space-grotesk",
 });
 
 export const metadata = {
@@ -28,7 +41,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable}  ${inter.variable}
+          ${spaceGrotesk.variable}
+          ${jetbrainsMono.variable} antialiased`}
       >
         <SmoothScroll />
         {children}
