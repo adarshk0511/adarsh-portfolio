@@ -8,8 +8,7 @@ export default function Marquee1() {
 
         {Array(10).fill(
           <span className="flex items-center gap-3">
-            
-            <span className="">🟢</span>
+            <div className="h-2 w-2 bg-emerald-300 rounded-2xl animate-pulse"></div>
            FULL STACK  DEVELOPER  
           </span>
         )}
