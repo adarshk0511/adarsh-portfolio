@@ -4,6 +4,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Tech } from "./Tech";
 
+import { Pacifico } from "next/font/google";
+const pacifico = Pacifico({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 const DatabaseStackSection = () => {
   return (
     <motion.div
@@ -30,8 +36,7 @@ const DatabaseStackSection = () => {
     >
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-[380px_1fr] gap-10">
         {/* LEFT LABEL */}
-        <div className="text-gray-400 text-5xl font-bold tracking-wide">
-          DATABASE
+ <div className={`${pacifico.className} text-gray-400 text-5xl font-bold tracking-wide `}>          DATABASE
         </div>
 
         {/* RIGHT GRID */}

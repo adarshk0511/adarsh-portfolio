@@ -64,7 +64,6 @@ export default function RootLayout({ children }) {
           ${spaceGrotesk.variable}
           ${jetbrainsMono.variable} ${pacifico.variable} ${anton.variable} ${pressStart.variable}`}
       >
-    
         <SmoothScroll />
         {children}
       </body>
