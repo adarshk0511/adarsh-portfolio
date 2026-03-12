@@ -89,7 +89,7 @@ export default function Terminal() {
       {line.type === "success" ? (
         <>
           <span className="text-emerald-400">✓</span>
-          <span className="text-cyan-300/90">{line.text.replace("✓ ", "")}</span>
+          <span className="text-cyan-300/90 font-[var(--font-mono)]">{line.text.replace("✓ ", "")}</span>
         </>
       ) : (
         <span className="text-white/80">{line.text}</span>

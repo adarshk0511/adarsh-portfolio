@@ -35,7 +35,7 @@ const FrontendStackSection = () => {
       <motion.div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-[380px_1fr] gap-10">
         {/* LEFT LABEL */}
         
-        <div className="text-gray-400 text-5xl font-bold tracking-wide">
+        <div className="font-[var(--font-pacifico)] text-gray-400 text-5xl font-bold tracking-wide ">
           FRONTEND
         </div>
 
