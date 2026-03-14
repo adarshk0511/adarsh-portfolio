@@ -78,6 +78,7 @@ export default function Home() {
       <DatabaseStackSection />
       <ToolsStackSection />
       <IdeStackSection />
+      <IdeStackSection />
       </div>
     
     </>
