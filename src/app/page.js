@@ -15,6 +15,8 @@ import IdeStackSection from "./components/IdeStackSection";
 import Marquee from "./components/Marquee";
 import Marquee1 from "./components/Marquee1";
 import SectionLabel from "./components/SectionLabel";
+import ExperienceSection from "./components/ExperienceSection";
+
 export default function Home() {
   return (
     <>
@@ -86,7 +88,7 @@ export default function Home() {
        
         {/* <Marquee /> */}
          <Marquee1 text={"TATA CONSULTANCY SERVICES"}/>
-         
+         <ExperienceSection />
           
       </div>
     </>
