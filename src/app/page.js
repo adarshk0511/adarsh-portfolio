@@ -68,19 +68,27 @@ export default function Home() {
 
 
       {/* ========= STACK SECTION ======================*/}
-      <div className="max-w-screen overflow-hidden">
+      <div className="max-w-screen overflow-hidden mb-20">
        
         {/* <Marquee /> */}
-         <Marquee1 />
+         <Marquee1 text={"FULL STACK DEVELOPER"}/>
          
           <FrontendStackSection />
       <BackendStackSection />
       <DatabaseStackSection />
       <ToolsStackSection />
       <IdeStackSection />
-      <IdeStackSection />
+     
       </div>
     
+      {/* ========= Experience SECTION ======================*/}
+      <div className="max-w-screen">
+       
+        {/* <Marquee /> */}
+         <Marquee1 text={"TATA CONSULTANCY SERVICES"}/>
+         
+          
+      </div>
     </>
   );
 }
