@@ -91,6 +91,15 @@ export default function Home() {
          <ExperienceSection />
           
       </div>
+
+      {/* ========= Project SECTION ======================*/}
+      <div className="max-w-screen">
+       
+        {/* <Marquee /> */}
+         <Marquee1 text={"NAMMA UDUPI"}/>
+         <ExperienceSection />
+          
+      </div>
     </>
   );
 }
