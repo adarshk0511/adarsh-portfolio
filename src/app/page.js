@@ -16,6 +16,7 @@ import Marquee from "./components/Marquee";
 import Marquee1 from "./components/Marquee1";
 import SectionLabel from "./components/SectionLabel";
 import ExperienceSection from "./components/ExperienceSection";
+import ProjectsSection from "./components/ProjectsSection";
 
 export default function Home() {
   return (
@@ -97,7 +98,7 @@ export default function Home() {
        
         {/* <Marquee /> */}
          <Marquee1 text={"NAMMA UDUPI"}/>
-         <ExperienceSection />
+         <ProjectsSection />
           
       </div>
     </>
