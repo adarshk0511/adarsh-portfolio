@@ -56,3 +56,40 @@ body {
   }
   /* Add more sizes as needed */
 }
+
+/* base text */
+.inactive-text {
+  color: rgba(255,255,255,0.3);
+}
+
+/* animated gradient text */
+.active-text {
+  background: linear-gradient(
+    90deg,
+    #22c55e 0%,
+    #22c55e 50%,
+    rgba(255,255,255,0.3) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: textReveal 0.5s ease forwards;
+}
+
+/* reverse when leaving */
+.inactive-text {
+  transition: all 0.3s ease;
+}
+
+/* animation */
+@keyframes textReveal {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0% 0;
+  }
+}

@@ -4,6 +4,7 @@ import { useState } from "react";
 import SectionLabel from "./SectionLabel";
 import { motion, AnimatePresence } from "framer-motion";
 import { Pacifico, Lobster_Two, Archivo_Black } from "next/font/google";
+import { ExternalIcon } from "./icons/ExternalIcon";
 
 const archivo_black = Archivo_Black({
   subsets: ["latin"],
@@ -73,8 +74,18 @@ export default function ProjectsSection() {
 
                   {/* TITLE */}
                   <h2
-                    className={`${archivo_black.className} text-[64px] leading-none font-bold tracking-tight transition-all duration-300
-                    ${isActive ? "text-green-400" : "text-gray-500 opacity-40"}`}
+                    className={`${archivo_black.className} relative text-[70px] font-bold tracking-tight
+  
+  ${activeIndex === index ? "active-text" : "inactive-text"}`}
+   style={{
+    background: "linear-gradient(90deg, #22c55e 50%, rgba(255,255,255,0.3) 50%)",
+    backgroundSize: "200% 100%",
+    backgroundPosition:
+      activeIndex === index ? "0% 0" : "100% 0",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent", 
+    transition: "background-position 0.5s ease"
+  }}
                   >
                     {project.title}
                   </h2>
@@ -88,6 +99,19 @@ export default function ProjectsSection() {
                       </span>
                     ))}
                   </div>
+
+                   {/* ICON */}
+  <span
+    className={`
+      absolute right-[-40px] top-1/2 -translate-y-1/2
+      transition-all duration-300 ease-out
+      ${activeIndex === index
+        ? "opacity-100 translate-x-0 translate-y-0 scale-100"
+        : "opacity-0 translate-x-[-10px] translate-y-[10px] scale-75"}
+    `}
+  >
+    <ExternalIcon />
+  </span>
                 </div>
               );
             })}
