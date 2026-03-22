@@ -88,6 +88,17 @@ export default function ProjectsSection() {
   }}
                   >
                     {project.title}
+                      <span
+    className={`
+      absolute  -translate-y-1/2
+      transition-all duration-300 ease-out hover:scale-80
+      ${activeIndex === index
+        ? "opacity-100 translate-x-0 translate-y-0 scale-100"
+        : "opacity-0 translate-x-[-10px] translate-y-[10px] scale-75"}
+    `}
+  >
+    <ExternalIcon />
+  </span>
                   </h2>
 
                   {/* TECH */}
@@ -101,17 +112,7 @@ export default function ProjectsSection() {
                   </div>
 
                    {/* ICON */}
-  <span
-    className={`
-      absolute right-[-40px] top-1/2 -translate-y-1/2
-      transition-all duration-300 ease-out
-      ${activeIndex === index
-        ? "opacity-100 translate-x-0 translate-y-0 scale-100"
-        : "opacity-0 translate-x-[-10px] translate-y-[10px] scale-75"}
-    `}
-  >
-    <ExternalIcon />
-  </span>
+
                 </div>
               );
             })}
@@ -127,7 +128,7 @@ export default function ProjectsSection() {
       if (index !== activeIndex) return null;
 
       // 🎯 Dynamic vertical position
-      const topOffset = -80 + index * 90;
+      const topOffset = -80 + index * 110;
 
       return (
         <motion.img
