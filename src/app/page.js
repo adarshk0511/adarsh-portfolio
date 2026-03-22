@@ -85,7 +85,7 @@ export default function Home() {
      
       </div>
     
-      {/* ========= Experience SECTION ======================*/}
+      {/* ========= EXPERIENCE SECTION ======================*/}
       <div className="max-w-screen">
        
         {/* <Marquee /> */}
