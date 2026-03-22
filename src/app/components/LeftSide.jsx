@@ -15,7 +15,7 @@ const LeftSide = () => {
      <div className="space-y-23 text-white">
           
           <h1 className="text-5xl lg:text-6xl font-semibold leading-tight">
-            Full Stack <span className=" text-outline-2 ">Developer</span>  <span className="inline-block w-4 h-13 bg-cyan-400 animate-pulse -mb-2"></span>
+            Full Stack <span className="text-gray-400">Developer</span>  <span className="inline-block w-4 h-13 bg-cyan-400 animate-pulse -mb-2"></span>
 
           </h1>
     
@@ -24,7 +24,7 @@ const LeftSide = () => {
             <h4 className={` ${lobsters_two.className} text-3xl text-white/80`}>
             Hi, Im Adarsh.
           </h4>
-          <img src="/images/me5.jpg" alt="Profile Picture" className="w-15 h-15 rounded-full " />
+          <img src="/images/me5.jpg" alt="Profile Picture" className="w-15 h-15 rounded-full drop-shadow-[0_0_10px_rgba(255,255,255,0.9)] transition duration-300 hover:scale-110" />
           </div>
           <p className={`text-white/70 text-lg max-w-xl ${inter.className}`}>
             I build scalable web applications with modern frontend and backend 

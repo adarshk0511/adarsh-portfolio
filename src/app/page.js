@@ -57,7 +57,7 @@ export default function Home() {
             <Navbar />
             <Contact />
 
-            <section className="relative -top-20 z-10 min-h-screen flex items-center px-8 lg:px-20">
+            <section className="relative -top-20 z-8 min-h-screen flex items-center px-8 lg:px-20">
               <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
                 {/* LEFT SIDE */}
                 <LeftSide />

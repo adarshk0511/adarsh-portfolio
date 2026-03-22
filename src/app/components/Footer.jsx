@@ -5,6 +5,7 @@ import React from "react";
 import LinkedInIcon  from '@/app/components/icons/LinkedInIcon';
 import MailIcon from "@/app/components/icons/MailIcon";
 import GithubIcon from "@/app/components/icons/GithubIcon";
+import LiveClock from "./LiveClock";
 
 
 const ExternalIcon = ({ children }) => (
@@ -31,8 +32,9 @@ opacity-25 blur-[120px] animate-pulse" />
           <div>
             {/* Logo */}
             <div className="text-6xl font-bold text-gray-200 flex items-center gap-2">
-              h
-              <span className="text-pink-400 text-xl">✦</span>
+              {/* h
+              <span className="text-pink-400 text-xl">✦</span> */}
+              <img src="/images/ak.png" alt="Logo" className="w-22 h-22" />
             </div>
 
             {/* Text */}
@@ -100,8 +102,7 @@ opacity-25 blur-[120px] animate-pulse" />
             </p>
 
             <p className="flex items-center gap-2">
-              <span className="text-pink-400">📍</span>
-              Bangalore, 02:02 PM IST (GMT+5:30)
+              <LiveClock />
             </p>
           </div>
 

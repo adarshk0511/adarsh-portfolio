@@ -7,13 +7,15 @@ const Navbar = () => {
   mx-auto w-[40%] max-w-6xl
   h-[70px] 
   rounded-2xl
-  border border-white/20
+  border border-white/10
        bg-black/10
-        backdrop-blur-xl
-        shadow-[0_10px_40px_rgba(0,0,0,0.5)]
+       blurred-2xl
+       bg-gradient-to-r from-white/5 to-white/10
+       shadow-[0_10px_10px_rgba(0,0,0,0.9)]
+       drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 hover:scale-110
         
 ">
-  <div className="flex items-center justify-between px-6 py-3 pt-5">
+  <div className="flex  justify-between px-6 py-3 pt-5">
 
    
 
@@ -24,16 +26,17 @@ const Navbar = () => {
     </div> */}
 
      {/* Logo */}
-    <div className="text-white/80 font-bold tracking-wide text-2xl">
-      AK
-    </div>
+      <img src="/images/ak.png" alt="Logo" className="w-12 h-12 -mt-3" />
+    {/* <div className="text-white/80 font-bold tracking-wide text-2xl">
+     
+    </div> */}
 
     {/* Social */}
     <div className="flex gap-6 text-white">
-       <a className="hover:text-white transition text-xl">Stack</a>
-      <a className="hover:text-white transition text-xl">Experience</a>
-       <a className="hover:text-white transition text-xl">Projects</a>
-      <a className="hover:text-white transition text-xl">CV</a>
+       <a className="hover:text-white transition text-xl hover:scale-90">Stack</a>
+      <a className="hover:text-white transition text-xl hover:scale-90">Experience</a>
+       <a className="hover:text-white transition text-xl hover:scale-90">Projects</a>
+      <a className="hover:text-white transition text-xl hover:scale-90">CV</a>
     </div>
 
   </div>
