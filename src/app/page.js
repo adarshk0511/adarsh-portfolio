@@ -55,7 +55,9 @@ export default function Home() {
           {/* Content Layer */}
           <div className="relative -top-10 z-10">
             <Navbar />
-            <Contact />
+            <div className="hidden md:block">
+  <Contact />
+</div>
 
             <section className="relative -top-20 z-8 min-h-screen flex items-center px-8 lg:px-20">
               <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">

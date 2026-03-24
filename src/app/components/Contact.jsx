@@ -8,8 +8,8 @@ import LeetCodeIcon from "@/app/components/icons/LeetCodeIcon";
 
 const Contact = () => {
   return (
-    <div className="sticky mx-[80%] -mt-10 z-50">
-         <div className="flex gap-6">
+<div className="hidden md:flex fixed top-8 right-10 z-50">
+  <div className="flex gap-6">
 <a
   href="https://linkedin.com"
   target="_blank"
