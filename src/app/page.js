@@ -59,15 +59,33 @@ export default function Home() {
   <Contact />
 </div>
 
-            <section className="relative -top-20 z-8 min-h-screen flex items-center px-8 lg:px-20">
-              <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
-                {/* LEFT SIDE */}
-                <LeftSide />
+         <section className="
+ max-h-screen 
+  px-6 lg:px-20 
+  pt-24 md:pt-32
+  flex
+">
 
-                {/* RIGHT SIDE */}
-                <RightSide />
-              </div>
-            </section>
+  <div className="
+    max-w-7xl mx-auto w-full 
+    grid lg:grid-cols-2 gap-16 
+    items-center -mt-20
+  ">
+
+    {/* LEFT SIDE */}
+   
+
+    {/* RIGHT SIDE */}
+    <div className="flex flex-col items-center md:items-start text-center md:text-left">
+      <LeftSide />
+    </div>
+
+     <div className="hidden md:block">
+      <RightSide />
+    </div>
+
+  </div>
+</section>
           </div>
         </div>
       </div>
