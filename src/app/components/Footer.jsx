@@ -26,7 +26,7 @@ opacity-25 blur-[120px] animate-pulse" />
       <div className="relative max-w-7xl mx-auto">
 
         {/* TOP SECTION */}
-        <div className="flex justify-between items-start">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10">
 
           {/* LEFT */}
           <div>
@@ -81,7 +81,10 @@ opacity-25 blur-[120px] animate-pulse" />
           </div>
 
           {/* RIGHT NAV */}
-          <div className="text-right  space-y-4 text-lg mt-[3%]">
+          <div className="flex flex-col 
+  items-start md:items-end 
+  text-left md:text-right md:mt-[60px] 
+  space-y-4 text-lg">
             <p className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">Explore Work</p>
             <p className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">About Me</p>
             <p className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">Download CV</p>
@@ -93,7 +96,9 @@ opacity-25 blur-[120px] animate-pulse" />
         <div className="border-t border-white/10 my-6 mt-8" />
 
         {/* BOTTOM SECTION */}
-        <div className="flex justify-between items-center text-sm text-gray-400">
+        <div className="flex flex-col md:flex-row 
+  gap-6 md:justify-between md:items-center 
+  text-sm text-gray-400">
 
           {/* LEFT */}
           <div className="space-y-3 max-w-[462px]">
