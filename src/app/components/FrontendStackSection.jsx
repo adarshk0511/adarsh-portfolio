@@ -35,11 +35,16 @@ const FrontendStackSection = () => {
       }}
       viewport={{ margin: "-100px" }}
     >
-       <SectionLabel text="MY STACK" className="ml-[20%]"/>
-      <motion.div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-[380px_1fr] gap-10">
+       <SectionLabel text="MY STACK" className="px-6 md:ml-[20%] text-left md:text-left" />
+      <motion.div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-[380px_1fr] gap-6 md:gap-10">
         {/* LEFT LABEL */}
         
-        <div className={`${pacifico.className} text-gray-400 text-5xl font-bold tracking-wide `}>
+        <div className={`${pacifico.className} 
+  text-gray-400 
+  text-4xl md:text-5xl 
+  font-bold 
+  tracking-wide -ml-8
+  text-center md:text-left`}>
           FRONTEND
         </div>
 

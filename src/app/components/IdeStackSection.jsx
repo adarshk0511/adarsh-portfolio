@@ -42,7 +42,12 @@ const IdeStackSection = () => {
     >
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-[380px_1fr] gap-10">
         {/* LEFT LABEL */}
- <div className={`${pacifico.className} text-gray-400 text-5xl font-bold tracking-wide `}>          IDEs
+ <div className={`${pacifico.className} 
+  text-gray-400 
+  text-4xl md:text-5xl 
+  font-bold 
+  tracking-wide -ml-38 md:-ml-8
+  text-center md:text-left`}>          IDEs
         </div>
 
         {/* RIGHT GRID */}
