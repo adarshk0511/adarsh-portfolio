@@ -46,7 +46,7 @@ opacity-25 blur-[120px] animate-pulse" />
             <div className="flex gap-6 mt-3 text-2xl">
 
                <a
-                href="mailto:your@email.com"
+                href="mailto:adarshpoojary375@gmail.com"
                 className="inline-flex items-center justify-center 
                            w-9 h-9 rounded-full
                            text-white/70 hover:text-white
@@ -55,7 +55,7 @@ opacity-25 blur-[120px] animate-pulse" />
                 <MailIcon className="w-9 h-9 hover:scale-110" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/adarsh-k-poojary-80a4b9243/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center 
@@ -66,7 +66,7 @@ opacity-25 blur-[120px] animate-pulse" />
                 <LinkedInIcon className="w-7 h-7 hover:scale-110" />
               </a> 
                 <a
-                href="https://github.com/yourusername"
+                href="https://github.com/adarshk0511"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center 
