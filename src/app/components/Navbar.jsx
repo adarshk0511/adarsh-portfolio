@@ -34,7 +34,7 @@ const Navbar = () => {
           <a className="hover:text-white transition text-xl">Stack</a>
           <a className="hover:text-white transition text-xl">Experience</a>
           <a className="hover:text-white transition text-xl">Projects</a>
-          <a className="hover:text-white transition text-xl">CV</a>
+          <a href="https://drive.google.com/file/d/1p3ZIbcb8B5SuNhwFrTzNG-09HV9O26FO/view?usp=drive_link" className="hover:text-white transition text-xl">CV</a>
         </div>
 
         {/* HAMBURGER (ONLY MOBILE) */}
