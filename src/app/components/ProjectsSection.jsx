@@ -92,7 +92,7 @@ export default function ProjectsSection() {
   }}
                   >
                     {project.title}
-                      <a href={project.link} 
+                      <span href={project.link} 
     className={`
       absolute  -translate-y-1/2
       transition-all duration-300 ease-out hover:scale-80
@@ -102,7 +102,7 @@ export default function ProjectsSection() {
     `}
   >
     <ExternalIcon />
-  </a>
+  </span>
                   </a>
 
                   {/* TECH */}
