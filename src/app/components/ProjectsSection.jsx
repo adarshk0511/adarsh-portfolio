@@ -17,24 +17,28 @@ const projects = [
     title: "Namma Udupi",
     tech: ["HTML", "CSS", "Bootstrap"],
     image: "/images/udupi.png",
-  },
+    link: "https://adarshk0511.github.io/Namma-Udupi/"
+   },
   {
     id: 2,
     title: "Testify",
     tech: ["ReactJS", "Tailwind CSS", "CSS"],
     image: "/images/testify.png",
+    link: "https://testify2.vercel.app/"
   },
   {
     id: 3,
     title: "Jobify",
     tech: ["MongoDB", "Express", "ReactJS", "NodeJS"],
     image: "/images/jobify.png",
+    link: "https://github.com/adarshk0511/mern-jobify-v2-main"
   },
   {
     id: 4,
     title: "Doc Vault",
     tech: ["HTML", "CSS", "PHP", "SQL"],
     image: "/images/doc.png",
+    link: "https://github.com/adarshk0511?tab=repositories"
   },
 ];
 
@@ -73,7 +77,7 @@ export default function ProjectsSection() {
                   </p>
 
                   {/* TITLE */}
-                  <h2
+                  <a href={project.link} 
                     className={`${archivo_black.className} relative text-[70px] font-bold tracking-tight
   
   ${activeIndex === index ? "active-text" : "inactive-text"}`}
@@ -88,7 +92,7 @@ export default function ProjectsSection() {
   }}
                   >
                     {project.title}
-                      <span
+                      <a href={project.link} 
     className={`
       absolute  -translate-y-1/2
       transition-all duration-300 ease-out hover:scale-80
@@ -98,8 +102,8 @@ export default function ProjectsSection() {
     `}
   >
     <ExternalIcon />
-  </span>
-                  </h2>
+  </a>
+                  </a>
 
                   {/* TECH */}
                   <div className="flex gap-4 mt-3 text-gray-500 text-sm">
