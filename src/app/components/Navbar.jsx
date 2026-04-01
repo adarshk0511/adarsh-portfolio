@@ -31,10 +31,10 @@ const Navbar = () => {
 
         {/* DESKTOP LINKS */}
         <div className="hidden md:flex gap-6 text-white">
-          <a className="hover:text-white transition text-xl">Stack</a>
-          <a className="hover:text-white transition text-xl">Experience</a>
-          <a className="hover:text-white transition text-xl">Projects</a>
-          <a href="https://drive.google.com/file/d/1p3ZIbcb8B5SuNhwFrTzNG-09HV9O26FO/view?usp=drive_link" className="hover:text-white transition text-xl">CV</a>
+          <a className="hover:text-white transition text-xl hover:scale-90">Stack</a>
+          <a className="hover:text-white transition text-xl hover:scale-90">Experience</a>
+          <a className="hover:text-white transition text-xl hover:scale-90">Projects</a>
+          <a href="https://drive.google.com/file/d/1p3ZIbcb8B5SuNhwFrTzNG-09HV9O26FO/view?usp=drive_link" className="hover:text-white transition text-xl hover:scale-90">CV</a>
         </div>
 
         {/* HAMBURGER (ONLY MOBILE) */}
