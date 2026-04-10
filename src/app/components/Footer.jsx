@@ -16,6 +16,7 @@ const ExternalIcon = ({ children }) => (
 
 export default function Footer() {
   return (
+    
     <footer className="relative px-8 pt-24 pb-10 text-gray-300 overflow-hidden">
 
       {/* 🌈 Background Glow */}
