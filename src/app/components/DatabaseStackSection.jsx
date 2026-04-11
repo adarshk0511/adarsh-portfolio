@@ -41,12 +41,12 @@ const DatabaseStackSection = () => {
   text-gray-400 
   text-4xl md:text-5xl 
   font-bold 
-  tracking-wide -ml-12 lg:-ml-8
+  tracking-wide -ml-23 lg:-ml-8
   text-center md:text-left`}>          DATABASE
         </div>
 
         {/* RIGHT GRID */}
-        <div className="flex flex-wrap gap-x-7 gap-y-8 pl-16">
+        <div className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-16 pl-10">
           <Tech icon="/icons/mysql.png" name="MySQL" /> 
           <Tech icon="/icons/mongo.png" name="MongoDB" />
           <Tech icon="/icons/postgresql.png" name="PostgreSQL" />

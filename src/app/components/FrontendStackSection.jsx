@@ -43,7 +43,7 @@ const FrontendStackSection = () => {
   text-gray-400 
   text-4xl md:text-5xl 
   font-bold 
-  tracking-wide -ml-8
+  tracking-wide lg:-ml-8 -ml-22
   text-center md:text-left`}>
           FRONTEND
         </div>
@@ -51,7 +51,7 @@ const FrontendStackSection = () => {
         {/* RIGHT GRID */}
         <motion.div
        
-          className="flex flex-wrap gap-x-7 gap-y-8 pl-17"
+          className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-17 pl-10"
         >
           <Tech icon="/icons/js.png" name="JavaScript" />
           <Tech icon="/icons/react.png" name="React" />

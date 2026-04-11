@@ -41,13 +41,13 @@ const BackendStackSection = () => {
   text-gray-400 
   text-4xl md:text-5xl 
   font-bold 
-  tracking-wide -ml-15 lg:-ml-8
+  tracking-wide -ml-28 lg:-ml-8
   text-center md:text-left`}>          BACKEND
         </div>
 
         {/* RIGHT GRID */}
-        <div className="flex flex-wrap gap-x-7 gap-y-8 pl-17">
-          <Tech icon="/icons/node.png" name="Node.Js" /> 
+        <div className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-17 pl-10"
+        >
           <Tech icon="/icons/express.png" name="Express" />
           <Tech icon="/icons/java.png" name="Java" />
           <Tech icon="/icons/python.png" name="Python" />

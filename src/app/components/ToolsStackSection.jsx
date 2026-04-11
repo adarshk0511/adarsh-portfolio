@@ -41,12 +41,12 @@ const ToolsStackSection = () => {
   text-gray-400 
   text-4xl md:text-5xl 
   font-bold 
-  tracking-wide -ml-28 md:-ml-8
+  tracking-wide lg:-ml-10 -ml-45
   text-center md:text-left`}>          TOOLS
         </div>
 
         {/* RIGHT GRID */}
-        <div className="flex flex-wrap gap-x-7 gap-y-8 pl-19">
+        <div className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-19 pl-12">
           <Tech icon="/icons/git.png" name="Git" /> 
           <Tech icon="/icons/postman.png" name="Postman" />
           <Tech icon="/icons/docker.png" name="Docker" />
@@ -57,3 +57,4 @@ const ToolsStackSection = () => {
 };
 
 export default ToolsStackSection;
+

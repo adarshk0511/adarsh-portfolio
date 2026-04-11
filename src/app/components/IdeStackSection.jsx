@@ -46,12 +46,12 @@ const IdeStackSection = () => {
   text-gray-400 
   text-4xl md:text-5xl 
   font-bold 
-  tracking-wide -ml-38 md:-ml-8
+  tracking-wide lg:-ml-10 -ml-55
   text-center md:text-left`}>          IDEs
         </div>
 
         {/* RIGHT GRID */}
-        <div className="flex flex-wrap gap-x-7 gap-y-8 pl-19 pb-10">
+        <div className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-19 pl-10 pb-10">
           <Tech icon="/icons/vscode.png" name="VsCode" /> 
           <Tech icon="/icons/xcode.png" name="Xcode" />
           <Tech icon="/icons/androidstudio.png" name="Android Studio" />
