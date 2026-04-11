@@ -41,7 +41,7 @@ const BackendStackSection = () => {
   text-gray-400 
   text-4xl md:text-5xl 
   font-bold 
-  tracking-wide -ml-15
+  tracking-wide -ml-15 lg:-ml-8
   text-center md:text-left`}>          BACKEND
         </div>
 

@@ -41,7 +41,7 @@ const DatabaseStackSection = () => {
   text-gray-400 
   text-4xl md:text-5xl 
   font-bold 
-  tracking-wide -ml-12
+  tracking-wide -ml-12 lg:-ml-8
   text-center md:text-left`}>          DATABASE
         </div>
 
