@@ -59,19 +59,26 @@ const LeftSide = () => {
 
   {/* BUTTONS */}
   <div className="flex gap-4 flex-wrap justify-center md:justify-start">
-<button
-  onClick={() => {
-    document.getElementById("projects")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  }}
-  className="px-6 py-3 rounded-full bg-white text-black hover:scale-105 transition"
->
-  Explore Work
-</button>
+  <button
+    onClick={() => {
+      document.getElementById("projects")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }}
+    className="px-6 py-3 rounded-full bg-white text-black hover:scale-105 transition"
+  >
+    Explore Work
+  </button>
 
-    <button className="px-6 py-3 rounded-full border border-white/30 hover:bg-white/10 transition">
-      About Me
+    <button
+      onClick={() => {
+        document.getElementById("experience")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }}
+      className="px-6 py-3 rounded-full border border-white/30 hover:bg-white/10 transition"
+    >
+      Experience
     </button>
   </div>
 

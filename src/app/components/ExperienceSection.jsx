@@ -33,7 +33,7 @@ const item = {
 
 export default function ExperienceSection() {
   return (
-    <section className="relative py-40 px-6">
+    <section className="relative py-40 px-6" id="experience">
        <img
               src="/images/bg3.png"
               alt="bg"
