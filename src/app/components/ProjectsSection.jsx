@@ -46,7 +46,7 @@ export default function ProjectsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="relative py-40 px-6">
+    <section className="relative py-40 px-6" id="projects">
 
 
         <div className="-ml-22">

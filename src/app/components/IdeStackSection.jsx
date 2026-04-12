@@ -51,7 +51,8 @@ const IdeStackSection = () => {
         </div>
 
         {/* RIGHT GRID */}
-        <div className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-19 pl-10 pb-10">
+        <div className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-19 pl-10npm run dev
+         pb-10">
           <Tech icon="/icons/vscode.png" name="VsCode" /> 
           <Tech icon="/icons/xcode.png" name="Xcode" />
           <Tech icon="/icons/androidstudio.png" name="Android Studio" />
