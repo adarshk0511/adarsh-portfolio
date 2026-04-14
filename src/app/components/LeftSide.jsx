@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 
-import { Pacifico, Lobster_Two, Inter } from "next/font/google";
+import { Pacifico, Lobster_Two, Inter, Raleway, Playwrite_NG_Modern } from "next/font/google";
 const lobsters_two = Lobster_Two({
   subsets: ["latin"],
   weight: "400",
@@ -10,6 +10,15 @@ const inter = Inter({
   subsets: ["latin"],
   weight: "400",
 });
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: "400",
+});
+const great_vibes = Playwrite_NG_Modern({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 
 const LeftSide = () => {
   return (
@@ -46,15 +55,13 @@ const LeftSide = () => {
   </div>
 
   {/* DESCRIPTION */}
-  <p className="
+  <p className={ `${raleway.className}
     text-white/70 
     text-base md:text-lg 
     max-w-md md:max-w-xl
     leading-relaxed
-  ">
-    I build scalable web applications with modern frontend and backend 
-    technologies. Passionate about performance, clean architecture, and 
-    creating meaningful digital experiences.
+  `}>
+   Software Engineer with <span className={` ${great_vibes.className} italic text-white`}>1.8+ YOE</span> building scalable full-stack applications. Skilled in <span className={` ${great_vibes.className} italic text-white`}>React</span> , <span className={` ${great_vibes.className} italic text-white`}>Angular</span>, and the <span className={` ${great_vibes.className} italic text-white`}>MERN</span> stack, with a strong focus on performance, clean architecture, and real-world impact.
   </p>
 
   {/* BUTTONS */}
