@@ -78,10 +78,22 @@ const Navbar = () => {
 
             {/* LINKS */}
             <div className="flex flex-col gap-6 text-lg text-white/80">
-              <a>Work</a>
-              <a>About</a>
-              <a>Feed</a>
-              <a>CV</a>
+              <a onClick={() => {
+                document.getElementById("stack")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}>Stack</a>
+              <a onClick={() => {
+                document.getElementById("experience")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}>Experience</a>
+              <a onClick={() => {
+                document.getElementById("projects")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}>Projects</a>
+              <a href="https://drive.google.com/file/d/1p3ZIbcb8B5SuNhwFrTzNG-09HV9O26FO/view?usp=drive_link">CV</a>
             </div>
 
             {/* DIVIDER */}
