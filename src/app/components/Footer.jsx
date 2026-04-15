@@ -86,8 +86,16 @@ opacity-25 blur-[120px] animate-pulse" />
   items-start md:items-end 
   text-left md:text-right md:mt-[60px] 
   space-y-4 text-lg">
-            <p className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">Explore Work</p>
-            <p className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">About Me</p>
+            <a onClick={() => {
+      document.getElementById("projects")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }} className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">Explore Work</a>
+            <a onClick={() => {
+      document.getElementById("experience")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }} className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">Experience</a>
             <a href="https://drive.google.com/file/d/1p3ZIbcb8B5SuNhwFrTzNG-09HV9O26FO/view?usp=drive_link" className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">Download CV</a>
           </div>
 
