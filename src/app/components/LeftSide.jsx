@@ -30,15 +30,15 @@ const LeftSide = () => {
    <div className="space-y-10 text-white">
 
   {/* HEADING */}
-  {/* <h1 className="
+  <h1 className="
     text-4xl sm:text-5xl md:text-6xl 
     font-semibold leading-tight
   ">
     Full Stack 
     <span className={`${audiowide.className} text-gray-400`}> Developer</span>
     <span className="inline-block w-2 h-8 md:w-4 md:h-12 bg-cyan-400 animate-pulse ml-2"></span>
-  </h1> */}
-  <TypingHeading audiowide={audiowide} />
+  </h1>
+  {/* <TypingHeading audiowide={audiowide} /> */}
 
   {/* INTRO */}
   <div className="
