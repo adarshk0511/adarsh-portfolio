@@ -5,6 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import LinkedInIcon from "@/app/components/icons/LinkedInIcon";
 import MailIcon from "@/app/components/icons/MailIcon";
 import GithubIcon from "@/app/components/icons/GithubIcon";
+import { Signika_Negative,Philosopher, Rancho,Inter } from "next/font/google";
+// const signikaNegative = Signika_Negative({
+//   subsets: ["latin"],
+//   weight: "400",
+// });
+const signikaNegative = Inter({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -35,18 +45,18 @@ const Navbar = () => {
       document.getElementById("stack")?.scrollIntoView({
         behavior: "smooth",
       });
-    }} className="hover:text-white transition text-xl hover:scale-90">Stack</a>
+    }} className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>Stack</a>
           <a  onClick={() => {
       document.getElementById("experience")?.scrollIntoView({
         behavior: "smooth",
       });
-    }} className="hover:text-white transition text-xl hover:scale-90">Experience</a>
+    }} className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>Experience</a>
           <a  onClick={() => {
       document.getElementById("projects")?.scrollIntoView({
         behavior: "smooth",
       });
-    }} className="hover:text-white transition text-xl hover:scale-90">Projects</a>
-          <a href="https://drive.google.com/file/d/1p3ZIbcb8B5SuNhwFrTzNG-09HV9O26FO/view?usp=drive_link" className="hover:text-white transition text-xl hover:scale-90">CV</a>
+    }} className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>Projects</a>
+          <a href="https://drive.google.com/file/d/1p3ZIbcb8B5SuNhwFrTzNG-09HV9O26FO/view?usp=drive_link" className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>CV</a>
         </div>
 
         {/* HAMBURGER (ONLY MOBILE) */}

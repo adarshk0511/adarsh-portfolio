@@ -1,7 +1,7 @@
 "use client";
 import React from 'react'
 
-import { Pacifico, Lobster_Two, Inter, Raleway, Playwrite_NG_Modern } from "next/font/google";
+import { Pacifico, Lobster_Two, Inter, Raleway, Playwrite_NG_Modern,Audiowide } from "next/font/google";
 const lobsters_two = Lobster_Two({
   subsets: ["latin"],
   weight: "400",
@@ -18,6 +18,10 @@ const great_vibes = Playwrite_NG_Modern({
   subsets: ["latin"],
   weight: "400",
 });
+const audiowide = Audiowide({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 
 const LeftSide = () => {
@@ -30,7 +34,7 @@ const LeftSide = () => {
     font-semibold leading-tight
   ">
     Full Stack 
-    <span className="text-gray-400"> Developer</span>
+    <span className={`${audiowide.className} text-gray-400`}> Developer</span>
     <span className="inline-block w-2 h-8 md:w-4 md:h-12 bg-cyan-400 animate-pulse ml-2"></span>
   </h1>
 
