@@ -19,6 +19,7 @@ export default function TypingHeading({ audiowide }) {
   }, [index]);
 
   return (
+    
     <h1 className={`${audiowide.className}text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight`}>
       
       {/* Split styling */}
