@@ -1,6 +1,9 @@
+
 import { Geist, Geist_Mono, Inter, Space_Grotesk, JetBrains_Mono , Pacifico, Anton, Press_Start_2P  } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "./components/SmoothScroll";
+import IntroLoader from "./components/IntroLoader";
+import { AnimatePresence } from "framer-motion";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +60,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
+
   return (
     <html lang="en">
       <body
@@ -64,7 +69,10 @@ export default function RootLayout({ children }) {
           ${spaceGrotesk.variable}
           ${jetbrainsMono.variable} ${pacifico.variable} ${anton.variable} ${pressStart.variable}`}
       >
-        <SmoothScroll />
+        {/* <SmoothScroll /> */}
+        <AnimatePresence>
+   <IntroLoader />
+</AnimatePresence>
         {children}
       </body>
     </html>

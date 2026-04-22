@@ -30,6 +30,7 @@ export default function Home() {
         w-full
         max-w-[1400px]
         h-[90vh]
+        md: h-[70vh]
         rounded-3xl
         overflow-hidden
         border border-white/10
