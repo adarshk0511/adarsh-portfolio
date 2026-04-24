@@ -1,7 +1,7 @@
 
 import { Geist, Geist_Mono, Inter, Space_Grotesk, JetBrains_Mono , Pacifico, Anton, Press_Start_2P  } from "next/font/google";
 import "./globals.css";
-import IntroLoader from "./components/IntroLoader";
+import NameLoader from "./components/IntroLoader";
 import { AnimatePresence } from "framer-motion";
 
 
@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
       >
         {/* <SmoothScroll /> */}
         <AnimatePresence>
-   <IntroLoader />
+   <NameLoader />
 </AnimatePresence>
         {children}
       </body>
