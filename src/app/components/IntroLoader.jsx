@@ -44,7 +44,7 @@ export default function NameIntro() {
         <motion.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="grain fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden bg-black"
+          className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden bg-black"
         >
           {/* 🌈 MOVING GRADIENT (FOOTER STYLE) */}
           <motion.div
@@ -99,6 +99,10 @@ export default function NameIntro() {
             />
           ))}
 
+         
+         
+          
+
           {/* ✨ TEXT */}
           <motion.div
             initial={{ scale: 0.8 }}
@@ -147,7 +151,10 @@ export default function NameIntro() {
                 </motion.span>
               ))}
             </div>
+
+            
           </motion.div>
+      
         </motion.div>
       )}
     </AnimatePresence>
