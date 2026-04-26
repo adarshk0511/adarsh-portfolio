@@ -173,3 +173,63 @@ body {
   80%  { transform: translate(5%, -10%); }
   100% { transform: translate(0, 0); }
 }
+
+.gold-text {
+  background: linear-gradient(
+    90deg,
+    #d4af37,
+    #ffd700,
+    #fff5cc,
+    #ffd700,
+    #d4af37
+  );
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 8px rgba(255, 215, 0, 0.4),
+    0 0 20px rgba(255, 215, 0, 0.2);
+
+  animation: goldShimmer 4s linear infinite;
+}
+
+@keyframes goldShimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.neon-red {
+  color: #ff2a2a;
+
+  text-shadow:
+    0 0 5px #ff2a2a,
+    0 0 10px #ff2a2a,
+    0 0 20px #ff0000,
+    0 0 40px #ff0000;
+
+  animation: neonPulse 2s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #ff2a2a,
+      0 0 10px #ff2a2a,
+      0 0 20px #ff0000,
+      0 0 40px #ff0000;
+  }
+  50% {
+    text-shadow:
+      0 0 2px #ff2a2a,
+      0 0 6px #ff2a2a,
+      0 0 12px #ff0000,
+      0 0 25px #ff0000;
+  }
+}
+
+.test-red {
+  color: red !important;
+}

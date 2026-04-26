@@ -3,6 +3,17 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { Bebas_Neue, Dancing_Script  } from "next/font/google";
+
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export default function NameIntro() {
   const [show, setShow] = useState(true);
@@ -119,7 +130,7 @@ export default function NameIntro() {
             className="relative flex flex-col items-center text-white"
           >
             {/* ADARSH */}
-            <div className="flex gap-2 text-5xl md:text-7xl font-semibold">
+            <div className={`${bebasNeue.className} gap-6 text-7xl md:text-9xl font-semibold`}>
               {"ADARSH".split("").map((char, i) => (
                 <motion.span
                   key={i}
@@ -136,21 +147,23 @@ export default function NameIntro() {
             </div>
 
             {/* FULL STACK DEV */}
-            <div className="flex gap-1 text-lg md:text-2xl mt-4 text-gray-300">
-              {"Full Stack Developer".split("").map((char, i) => (
-                <motion.span
-                  key={i}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    delay: 0.8 + i * 0.03,
-                    duration: 0.4,
-                  }}
-                >
-                  {char}
-                </motion.span>
-              ))}
-            </div>
+            <div
+            className={`${dancingScript.className} gap-3 text-3xl md:text-5xl mt-4 font-semibold relative -top-10 md:-top-10 neon-red`}
+          >
+            {"Full Stack Developer".split("").map((char, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.8 + i * 0.03,
+                  duration: 0.4,
+                }}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </div>
 
             
           </motion.div>

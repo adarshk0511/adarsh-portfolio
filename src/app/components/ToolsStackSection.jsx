@@ -11,6 +11,14 @@ const pacifico = Pacifico({
   weight: "400",
 });
 
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.25, // 👈 controls delay between items
+    },
+  },
+};
 const ToolsStackSection = () => {
   return (
     <motion.div
@@ -46,11 +54,14 @@ const ToolsStackSection = () => {
         </div>
 
         {/* RIGHT GRID */}
-        <div className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-19 pl-12">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show" className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-19 pl-12">
           <Tech icon="/icons/git.png" name="Git" /> 
           <Tech icon="/icons/postman.png" name="Postman" />
           <Tech icon="/icons/docker.png" name="Docker" />
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

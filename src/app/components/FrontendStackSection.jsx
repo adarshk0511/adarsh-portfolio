@@ -10,6 +10,14 @@ const pacifico = Pacifico({
   weight: "400",
 });
 
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.25, // 👈 controls delay between items
+    },
+  },
+};
 const FrontendStackSection = () => {
 
 
@@ -50,7 +58,9 @@ const FrontendStackSection = () => {
 
         {/* RIGHT GRID */}
         <motion.div
-       
+  variants={container}
+  initial="hidden"
+  whileInView="show"
           className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-17 pl-10"
         >
           <Tech icon="/icons/js.png" name="JavaScript" />
