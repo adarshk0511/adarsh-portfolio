@@ -130,7 +130,7 @@ export default function Home() {
       <div className="max-w-screen mt-20">
        
         {/* <Marquee /> */}
-         <Marquee1 text={"CONACT BELOW"}/>
+         <Marquee1 text={"CONTACT BELOW"}/>
          <Footer />
           
       </div>
