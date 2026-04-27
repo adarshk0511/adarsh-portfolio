@@ -112,7 +112,7 @@ opacity-25 blur-[120px] animate-pulse" />
           {/* LEFT */}
           <div className="space-y-3 max-w-[462px]">
             <p>
-              &quot;Hope is the belief in the probability of the possible rather than the necessity of the probable. ✨&quot; — Anonymous
+              &quot;Hope is the belief in the probability of the possible rather than the necessity of the probable. ✨&quot; 
             </p>
 
             <p className="flex items-center gap-2">
