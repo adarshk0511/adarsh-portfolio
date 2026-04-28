@@ -110,7 +110,7 @@ export default function Home() {
       <div className="max-w-screen">
        
         {/* <Marquee /> */}
-         <Marquee1 text={"TATA CONSULTANCY SERVICES"}/>
+         <Marquee1 text={"CAREER HISTORY"}/>
          <ExperienceSection />
           
       </div>
@@ -119,7 +119,7 @@ export default function Home() {
       <div className="max-w-screen">
        
         {/* <Marquee /> */}
-         <Marquee1 text={"NAMMA UDUPI"}/>
+         <Marquee1 text={"BUILDS"}/>
          <ProjectsSection />
           
       </div>
