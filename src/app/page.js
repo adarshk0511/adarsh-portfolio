@@ -119,7 +119,7 @@ export default function Home() {
       <div className="max-w-screen">
        
         {/* <Marquee /> */}
-         <Marquee1 text={"BUILDS"}/>
+         <Marquee1 text={"FEATURED BUILDS"}/>
          <ProjectsSection />
           
       </div>
