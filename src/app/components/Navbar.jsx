@@ -20,6 +20,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
+    
     <div className="relative top-1 z-50">
 
       {/* DESKTOP NAV (UNCHANGED DESIGN) */}
