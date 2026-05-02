@@ -64,6 +64,7 @@ const BackendStackSection = () => {
           <Tech icon="/icons/express.png" name="Express" />
           <Tech icon="/icons/java.png" name="Java" />
           <Tech icon="/icons/python.png" name="Python" />
+          <Tech icon="/icons/node.png" name="Node.js" />
         </motion.div>
       </div>
     </motion.div>
