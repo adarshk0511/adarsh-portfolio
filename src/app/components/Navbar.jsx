@@ -1,10 +1,14 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from 'next/image';
+
 import { motion, AnimatePresence } from "framer-motion";
 import LinkedInIcon from "@/app/components/icons/LinkedInIcon";
 import MailIcon from "@/app/components/icons/MailIcon";
 import GithubIcon from "@/app/components/icons/GithubIcon";
+import LeetCodeIcon from "@/app/components/icons/LeetCodeIcon";
+
 import { Signika_Negative,Philosopher, Rancho,Inter } from "next/font/google";
 // const signikaNegative = Signika_Negative({
 //   subsets: ["latin"],
@@ -115,6 +119,9 @@ const Navbar = () => {
               <LinkedInIcon className="w-6 h-6 hover:text-white" />
               <MailIcon className="w-6 h-6 hover:text-white" />
               <GithubIcon className="w-6 h-6 hover:text-white" />
+                 <Image  src='/leetcode.svg' alt="" width={25} height={25} className="hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 hover:scale-110" ></Image>
+              
+              <LeetCodeIcon className="w-1 h-1" />
             </div>
 
           </motion.div>
