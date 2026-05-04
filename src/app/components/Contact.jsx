@@ -50,8 +50,8 @@ const Contact = () => {
              text-white/70 hover:text-white
              transition hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 hover:scale-120"
 >
-   <Image  src='/leetcode.svg' alt="" width={25} height={25} className="hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 hover:scale-110" ></Image>
-   <LeetCodeIcon className="w-1 h-1" />
+   <Image  src='/leetcode.svg' alt="" width={25} height={5} className="hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 hover:scale-110 relative top-0 p-0" ></Image>
+   <LeetCodeIcon className="" />
   
 
  
