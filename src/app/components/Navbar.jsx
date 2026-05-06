@@ -118,7 +118,8 @@ const Navbar = () => {
             <div className="flex gap-6 text-white/70 text-xl">
               <a
   href="https://www.linkedin.com/in/adarsh-k-poojary-80a4b9243/"><LinkedInIcon className="w-6 h-6 hover:text-white" /></a>
-              <MailIcon className="w-7 h-7 hover:text-white" />
+         <a
+          href="mailto:adarshpoojary375@gmail.com">      <MailIcon className="w-7 h-7 hover:text-white" /> </a>
               <GithubIcon className="w-7 h-7 hover:text-white" />
                  <Image  src='/leetcode.svg' alt="" width={25} height={20} className="hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 hover:scale-110 p-0 -mt-9 m-0" ></Image>
               
