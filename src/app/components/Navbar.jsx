@@ -115,16 +115,17 @@ const Navbar = () => {
             <div className="border-t border-white/10 my-6" />
 
             {/* SOCIALS */}
-            <div className="flex gap-6 text-white/70 text-xl">
+            <div className="flex gap-6 text-white/70 text-xl h-8">
               <a
   href="https://www.linkedin.com/in/adarsh-k-poojary-80a4b9243/"><LinkedInIcon className="w-6 h-6 hover:text-white" /></a>
          <a
           href="mailto:adarshpoojary375@gmail.com">      <MailIcon className="w-7 h-7 hover:text-white" /> </a>
                <a
   href="https://github.com/adarshk0511"><GithubIcon className="w-7 h-7 hover:text-white" /></a>
-                 <Image  src='/leetcode.svg' alt="" width={25} height={20} className="hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 hover:scale-110 p-0 -mt-9 m-0" ></Image>
+               <a
+  href="https://leetcode.com/u/lIsrbXvRgT/">   <Image  src='/leetcode.svg' alt="" width={25} height={20} className="hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 hover:scale-110 p-0  m-0" ></Image>
               
-              <LeetCodeIcon className="w-1 h-0" />
+              <LeetCodeIcon className="w-1 h-0" /></a>
             </div>
 
           </motion.div>
