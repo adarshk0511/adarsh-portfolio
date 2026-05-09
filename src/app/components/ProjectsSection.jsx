@@ -5,6 +5,7 @@ import SectionLabel from "./SectionLabel";
 import { motion, AnimatePresence } from "framer-motion";
 import { Archivo_Black } from "next/font/google";
 import { ExternalIcon } from "./icons/ExternalIcon";
+import Particles from "./Particles";
 
 const archivo_black = Archivo_Black({
   subsets: ["latin"],
@@ -67,6 +68,39 @@ export default function ProjectsSection() {
 
   return (
     <section className="relative py-40 px-6" id="projects">
+
+       {/* 🌌 PARTICLES BACKGROUND */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Particles
+      particleColors={[
+        "#ffffff",
+        "#8b5cf6",
+        "#3b82f6",
+        "#06b6d4"
+      ]}      particleCount={420}
+            particleSpread={4}
+            speed={0.1}
+            particleBaseSize={120}
+            moveParticlesOnHover
+            alphaParticles
+            disableRotation={false}
+            pixelRatio={1}
+          />
+        </div>
+      
+        {/* 🌈 EXTRA GLOW */}
+        <div
+          className="
+            absolute
+            inset-0
+            z-0
+      
+            bg-[radial-gradient(circle_at_top_left,rgba(139,92,246,0.15),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(59,130,246,0.12),transparent_30%)]
+      
+            blur-[120px]
+          "
+        />
+
       <div className="-ml-22">
         <SectionLabel text="MY PROJECTS" />
       </div>

@@ -18,6 +18,7 @@ import SectionLabel from "./components/SectionLabel";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
+import Particles from "./components/Particles";
 
 export default function Home() {
   return (
@@ -93,18 +94,53 @@ export default function Home() {
 
 
       {/* ========= STACK SECTION ======================*/}
-      <div className="max-w-screen overflow-hidden mb-20">
-       
-        {/* <Marquee /> */}
-         <Marquee1 text={"FULL STACK DEVELOPER"}/>
-         
-          <FrontendStackSection />
-      <BackendStackSection />
-      <DatabaseStackSection />
-      <ToolsStackSection />
-      <IdeStackSection />
-     
-      </div>
+      <div className="relative overflow-hidden mb-20">
+
+  {/* 🌌 PARTICLES BACKGROUND */}
+  <div className="absolute inset-0 z-0 pointer-events-none">
+    <Particles
+particleColors={[
+  "#ffffff",
+  "#8b5cf6",
+  "#3b82f6",
+  "#06b6d4"
+]}      particleCount={420}
+      particleSpread={4}
+      speed={0.1}
+      particleBaseSize={120}
+      moveParticlesOnHover
+      alphaParticles
+      disableRotation={false}
+      pixelRatio={1}
+    />
+  </div>
+
+  {/* 🌈 EXTRA GLOW */}
+  <div
+    className="
+      absolute
+      inset-0
+      z-0
+
+      bg-[radial-gradient(circle_at_top_left,rgba(139,92,246,0.15),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(59,130,246,0.12),transparent_30%)]
+
+      blur-[120px]
+    "
+  />
+
+  {/* CONTENT */}
+  <div className="relative z-10">
+
+    <Marquee1 text={"FULL STACK DEVELOPER"} />
+
+    <FrontendStackSection />
+    <BackendStackSection />
+    <DatabaseStackSection />
+    <ToolsStackSection />
+    <IdeStackSection />
+
+  </div>
+</div>
     
       {/* ========= EXPERIENCE SECTION ======================*/}
       <div className="max-w-screen">
