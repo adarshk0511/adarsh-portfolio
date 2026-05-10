@@ -96,7 +96,7 @@ opacity-25 blur-[120px] animate-pulse" />
         behavior: "smooth",
       });
     }} className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">Experience</a>
-            <a href="https://drive.google.com/file/d/1p3ZIbcb8B5SuNhwFrTzNG-09HV9O26FO/view?usp=drive_link" className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">Download CV</a>
+            <a href="https://drive.google.com/file/d/1GkjtFHqqs3-6OpxR6nQQRqGuAc9HZZys/view?usp=sharing" className="hover:text-white hover:translate-x-1 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)] transition duration-300 cursor-pointer">Download CV</a>
           </div>
 
         </div>

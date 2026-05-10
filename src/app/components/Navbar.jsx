@@ -61,7 +61,7 @@ const Navbar = () => {
         behavior: "smooth",
       });
     }} className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>Projects</a>
-          <a href="https://drive.google.com/file/d/1p3ZIbcb8B5SuNhwFrTzNG-09HV9O26FO/view?usp=drive_link" className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>CV</a>
+          <a href="https://drive.google.com/file/d/1GkjtFHqqs3-6OpxR6nQQRqGuAc9HZZys/view?usp=sharing" className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>CV</a>
         </div>
 
         {/* HAMBURGER (ONLY MOBILE) */}
@@ -108,7 +108,7 @@ const Navbar = () => {
                   behavior: "smooth",
                 });
               }}>Projects</a>
-              <a href="https://drive.google.com/file/d/1p3ZIbcb8B5SuNhwFrTzNG-09HV9O26FO/view?usp=drive_link">CV</a>
+              <a href="https://drive.google.com/file/d/1GkjtFHqqs3-6OpxR6nQQRqGuAc9HZZys/view?usp=sharing">CV</a>
             </div>
 
             {/* DIVIDER */}

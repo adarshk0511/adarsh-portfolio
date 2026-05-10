@@ -81,7 +81,7 @@ export default function ProjectsSection() {
             particleSpread={4}
             speed={0.1}
             particleBaseSize={120}
-            moveParticlesOnHover
+            moveParticlesOnHover={true}
             alphaParticles
             disableRotation={false}
             pixelRatio={1}
