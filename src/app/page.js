@@ -87,7 +87,7 @@ export default function Home() {
 
 
       {/* ========= STACK SECTION ======================*/}
-      <div className="relative overflow-hidden mb-20">
+      <div className="relative overflow-hidden mb-1 pb-30">
 
   {/* 🌌 PARTICLES BACKGROUND */}
   <div className="absolute inset-0 z-0 pointer-events-none">
