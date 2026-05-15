@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 export default function SectionLabel({ text }) {
   return (
-    
     <div className="flex items-center gap-3 text-gray-300 text-2xl ml-[20%] mb-[2rem]">
 
       <motion.span
