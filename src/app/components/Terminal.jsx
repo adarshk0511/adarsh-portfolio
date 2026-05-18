@@ -30,6 +30,7 @@ export default function Terminal() {
   }, []);
 
   return (
+    
     <div className="relative rounded-3xl overflow-hidden
                 bg-gradient-to-b from-white/10 to-white/[0.03]
                 backdrop-blur-xl

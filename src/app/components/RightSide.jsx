@@ -9,12 +9,6 @@ const RightSide = () => {
       <div 
       >
   
-         {/* <img
-          src="/images/stack.png"
-          alt="Project Preview"
-          className="rounded-2xl"
-        /> 
-        <GlassStack /> */}
 {/* 
       <img
           src="/images/stack3.png"
