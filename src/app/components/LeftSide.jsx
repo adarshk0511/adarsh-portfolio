@@ -67,7 +67,7 @@ const LeftSide = () => {
     max-w-md md:max-w-xl
     leading-relaxed
   `}>
-   Software Engineer with <span className={` ${great_vibes.className} italic text-white`}>1.8+ YOE</span> building scalable full-stack applications. Skilled in <span className={` ${great_vibes.className} italic text-white`}>React</span> , <span className={` ${great_vibes.className} italic text-white`}>Angular</span>, and the <span className={` ${great_vibes.className} italic text-white`}>MERN</span> stack, with a strong focus on performance, clean architecture, and real-world impact.
+   Software Engineer with <span className={` ${great_vibes.className} italic text-white`}>1.10+ YOE</span> building scalable full-stack applications. Skilled in <span className={` ${great_vibes.className} italic text-white`}>React</span> , <span className={` ${great_vibes.className} italic text-white`}>Angular</span>, and the <span className={` ${great_vibes.className} italic text-white`}>MERN</span> stack, with a strong focus on performance, clean architecture, and real-world impact.
   </p>
 
   {/* BUTTONS */}
