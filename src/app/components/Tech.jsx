@@ -22,6 +22,7 @@ export function Tech({ icon, name }) {
   };
 
   return (
+    
     <motion.div
       variants={item}
       whileHover={{ scale: 1.08 }}
