@@ -78,7 +78,7 @@ const LeftSide = () => {
       document.getElementById("projects")?.scrollIntoView({
         behavior: "smooth",
       });
-    }}
+    }}  
     className="px-6 py-3 rounded-full bg-white text-black hover:scale-105 transition"
   >
     Explore Work
