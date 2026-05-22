@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import { Bebas_Neue, Dancing_Script } from "next/font/google";
+import { Bebas_Neue, Dancing_Script, VT323 } from "next/font/google";
 
 import Particles from "./Particles";
 
@@ -17,6 +17,10 @@ const dancingScript = Dancing_Script({
   weight: ["400"],
 });
 
+const fugazOne = VT323({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 export default function NameIntro() {
   const [show, setShow] = useState(true);
 
@@ -120,23 +124,24 @@ export default function NameIntro() {
             {/* FULL STACK DEV */}
             <div
               className={`
-                ${dancingScript.className}
+                ${fugazOne.className}
 
                 flex
                 gap-1
 
                 text-2xl
-                md:text-4xl
+                md:text-5xl
 
                 mt-3
 
                 relative
                 -top-6
 
-                text-white/50
+                text-white/60
+
               `}
             >
-              {"Full Stack Developer".split("").map((char, i) => (
+              {"Full  Stack  Developer".split("").map((char, i) => (
                 <motion.span
                   key={i}
                   initial={{ opacity: 0, y: 50 }}
