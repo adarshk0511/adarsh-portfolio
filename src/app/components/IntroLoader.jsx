@@ -92,34 +92,37 @@ export default function NameIntro() {
           >
             {/* ADARSH */}
             <div
-              className={`
-                ${bebasNeue.className}
+            className={`
+              ${bebasNeue.className}
 
-                flex
-                gap-2
+              flex
+              gap-2
 
-                text-7xl
-                md:text-9xl
+              text-7xl
+              md:text-9xl
 
-                font-semibold
+              font-semibold
 
-                tracking-wide
-              `}
-            >
-              {"ADARSH".split("").map((char, i) => (
-                <motion.span
-                  key={i}
-                  initial={{ opacity: 0, y: 80 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    delay: i * 0.1,
-                    duration: 0.5,
-                  }}
-                >
-                  {char}
-                </motion.span>
-              ))}
-            </div>
+              tracking-wide
+            `}
+            style={{
+              textShadow: "0 0 10px rgb(225, 225, 225)",
+            }}
+          >
+            {"ADARSH".split("").map((char, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, y: 80 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: i * 0.1,
+                  duration: 0.5,
+                }}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </div>
 
             {/* FULL STACK DEV */}
             <div
