@@ -50,17 +50,17 @@ const Navbar = () => {
       document.getElementById("stack")?.scrollIntoView({
         behavior: "smooth",
       });
-    }} className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>Stack</a>
+    }} className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90 cursor-pointer`}>Stack</a>
           <a  onClick={() => {
       document.getElementById("experience")?.scrollIntoView({
         behavior: "smooth",
       });
-    }} className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>Experience</a>
+    }} className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90 cursor-pointer`}>Experience</a>
           <a  onClick={() => {
       document.getElementById("projects")?.scrollIntoView({
         behavior: "smooth",
       });
-    }} className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>Projects</a>
+    }} className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90 cursor-pointer`}>Projects</a>
           <a href="https://drive.google.com/file/d/1GkjtFHqqs3-6OpxR6nQQRqGuAc9HZZys/view?usp=sharing" className={`${signikaNegative.className} hover:text-white transition text-xl hover:scale-90`}>CV</a>
         </div>
 
