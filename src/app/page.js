@@ -12,10 +12,12 @@ import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 import Particles from "./components/Particles";
+import ScrollProgress from "./components/ScrollProgress";
 
 export default function Home() {
   return (
     <>
+      <ScrollProgress />
       <div className="min-h-screen bg-black flex items-center justify-center p-6">
         {/* Glass Frame */}
         <div
