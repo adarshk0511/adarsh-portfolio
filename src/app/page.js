@@ -13,6 +13,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 import Particles from "./components/Particles";
 import ScrollProgress from "./components/ScrollProgress";
+import BottomGlow from "./components/BottomGlow";
 
 export default function Home() {
   return (
@@ -157,6 +158,8 @@ particleColors={[
 
 
 
+
+
       {/* ========= FOOTER SECTION ======================*/}
       <div className="max-w-screen mt-20">
        
@@ -165,6 +168,7 @@ particleColors={[
          <Footer />
           
       </div>
+      
     </>
   );
 }
