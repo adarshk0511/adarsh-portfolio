@@ -4,10 +4,8 @@ import { motion, useScroll, useSpring } from "framer-motion";
 
 export default function ScrollProgress() {
 
-  // 📜 SCROLL PROGRESS (0 → 1)
   const { scrollYProgress } = useScroll();
 
-  // ✨ SMOOTH SPRING ANIMATION
   const scaleY = useSpring(scrollYProgress, {
     stiffness: 120,
     damping: 20,
@@ -32,7 +30,7 @@ export default function ScrollProgress() {
         "
       />
 
-      {/* PROGRESS */}
+      {/* PROGRESS LINE */}
       <motion.div
         style={{ scaleY }}
 
@@ -55,7 +53,29 @@ export default function ScrollProgress() {
 
           z-[1000]
         "
-      />
+      >
+
+        {/* ✨ GLOWING TIP */}
+        <div
+          className="
+            absolute
+            bottom-0
+            left-1/2
+            -translate-x-1/2
+
+            w-[10px]
+            h-[22px]
+
+            rounded-full
+
+            bg-white/90
+
+            blur-[6px]
+
+            shadow-[0_0_12px_rgba(255,255,255,0.9),0_0_25px_rgba(168,85,247,0.45),0_0_40px_rgba(34,211,238,0.25)]
+          "
+        />
+      </motion.div>
     </>
   );
 }
