@@ -19,6 +19,13 @@ const container = {
   },
 };
 
+
+const tech = [
+  { name: "Express", icon: "/icons/express.png" },
+  { name: "Java", icon: "/icons/java.png" },
+  { name: "Python", icon: "/icons/python.png" },
+  { name: "Node.js", icon: "/icons/node.png" }
+];
 const BackendStackSection = () => {
   return (
     
@@ -61,10 +68,9 @@ const BackendStackSection = () => {
   whileInView="show"
   className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-17 pl-10"
         >
-          <Tech icon="/icons/express.png" name="Express" />
-          <Tech icon="/icons/java.png" name="Java" />
-          <Tech icon="/icons/python.png" name="Python" />
-          <Tech icon="/icons/node.png" name="Node.js" />
+          {tech.map((item, i) => (
+            <Tech key={i} icon={item.icon} name={item.name} />
+          ))}   
         </motion.div>
       </div>
     </motion.div>
