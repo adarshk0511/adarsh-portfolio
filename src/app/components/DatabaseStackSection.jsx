@@ -19,6 +19,11 @@ const container = {
   },
 };
 
+const tech = [
+  { name: "MySQL", icon: "/icons/mysql.png" },
+  { name: "MongoDB", icon: "/icons/mongo.png" },
+  { name: "PostgreSQL", icon: "/icons/postgresql.png" }
+];
 const DatabaseStackSection = () => {
   return (
     
@@ -59,9 +64,10 @@ const DatabaseStackSection = () => {
   variants={container}
   initial="hidden"
   whileInView="show" className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-16 pl-10">
-          <Tech icon="/icons/mysql.png" name="MySQL" /> 
-          <Tech icon="/icons/mongo.png" name="MongoDB" />
-          <Tech icon="/icons/postgresql.png" name="PostgreSQL" />
+          
+          {tech.map((item, index) => (
+            <Tech key={index} icon={item.icon} name={item.name} />
+          ))}
         </motion.div>
       </div>
     </motion.div>
