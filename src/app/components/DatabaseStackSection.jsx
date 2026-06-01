@@ -67,7 +67,7 @@ const DatabaseStackSection = () => {
           
           {tech.map((item, index) => (
             <Tech key={index} icon={item.icon} name={item.name} />
-          ))}
+          ))} 
         </motion.div>
       </div>
     </motion.div>

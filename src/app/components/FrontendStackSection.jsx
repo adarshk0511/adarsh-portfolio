@@ -18,6 +18,16 @@ const container = {
     },
   },
 };
+
+const tech = [
+  { name: "JavaScript", icon: "/icons/js.png" },
+  { name: "React", icon: "/icons/react.png" },
+  { name: "Sass", icon: "/icons/sass.png" },
+  { name: "Tailwind", icon: "/icons/tailwind.png" },
+  { name: "HTML", icon: "/icons/html.png" },
+  { name: "CSS", icon: "/icons/css.png" },
+]
+
 const FrontendStackSection = () => {
 
 
@@ -69,12 +79,9 @@ const FrontendStackSection = () => {
   whileInView="show"
           className="flex flex-wrap gap-x-7 gap-y-8 lg:pl-17 pl-10"
         >
-          <Tech icon="/icons/js.png" name="JavaScript" />
-          <Tech icon="/icons/react.png" name="React" />
-          <Tech icon="/icons/sass.png" name="Sass" />
-          <Tech icon="/icons/tailwind.png" name="Tailwind" />
-          <Tech icon="/icons/html.png" name="HTML" />
-          <Tech icon="/icons/css.png" name="CSS" />
+          {tech.map((item, index) => (
+            <Tech key={index} icon={item.icon} name={item.name} />
+          ))}
         </motion.div>
       </motion.div>
     </motion.div>
